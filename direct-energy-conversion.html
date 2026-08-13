@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Direct Energy Conversion for a D–³He Magnetic-Mirror Burner: The Electron Channel is the Larger Axial Stream · Kronos Fusion Energy</title><meta name="description" content="Kronos Fusion Energy 2026 — Power Conversion · DEC. Open-access paper with reproducible data and code, interactive 3D model, and live verification."><link rel="canonical" href="https://www.kronosfusionenergy.com/publications/"><meta name="citation_title" content="Direct Energy Conversion for a D–³He Magnetic-Mirror Burner: The Electron Channel is the Larger Axial Stream">
+<meta name="citation_author" content="P. I. Ford">
+<meta name="citation_author" content="G. L. Kulcinski">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_pdf_url" content="https://www.kronosfusionenergy.com/publications/papers/Kronos_DEC_QuasineutralExpander_Editorial_2026.pdf">
+<meta name="citation_doi" content="10.5281/zenodo.21842864">
+<meta name="citation_abstract_html_url" content="https://www.kronosfusionenergy.com/publications/direct-energy-conversion.html">
+<meta name="citation_publisher" content="Kronos Fusion Energy"><style>
+:root{--ink:#14181f;--muted:#5b6675;--line:#e2e5ea;--bg:#fbfbf9;--card:#fff;
+  --accent:#7a1420;--accent2:#0b3d5c;--chip:#f1f0ec}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.6 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;-webkit-font-smoothing:antialiased}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px}
+header.masthead{border-bottom:1px solid var(--line);background:#fff}
+.masthead .wrap{padding:30px 22px 26px}
+.brand{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:700;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.crumb{font-size:12.5px;color:var(--muted);margin:0 0 6px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.crumb a{color:var(--accent2);text-decoration:none}
+h1{font-size:33px;line-height:1.15;margin:12px 0 10px;letter-spacing:-.01em}
+.lede{color:var(--muted);max-width:66ch;margin:0}
+.status{margin:22px 0 0;padding:13px 16px;border:1px solid var(--line);border-left:3px solid var(--accent2);
+  background:#fff;border-radius:6px;font-size:14.5px;color:#33404e;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+main{padding:34px 0 10px}
+.intro{color:#37414d;max-width:70ch;margin:0 0 30px}
+.volume{background:linear-gradient(180deg,#fff, #fbf7f4);border:1px solid #e7ddd6;border-left:4px solid var(--accent);
+  border-radius:12px;padding:26px 26px 22px;margin:0 0 34px}
+.volume .kk{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:800;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.volume h2{font-size:24px;margin:6px 0 8px}
+.volume p{font-size:15px;color:#37414d;margin:0 0 16px;max-width:74ch}
+.paper{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 24px 18px;
+  margin:0 0 18px;box-shadow:0 1px 2px rgba(20,24,31,.03)}
+.paper h2{font-size:20px;line-height:1.3;margin:2px 0 6px;letter-spacing:-.005em}
+.paper h2 a{color:var(--ink);text-decoration:none}
+.paper h2 a:hover{color:var(--accent)}
+.authors{font-size:14px;color:var(--muted);margin:0 0 12px}
+.abs{font-size:15px;color:#2c343d;margin:0 0 16px}
+.tag{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;
+  color:var(--accent);margin:0 0 8px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.meta{display:flex;flex-wrap:wrap;gap:9px;align-items:center;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+a.btn{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:13.5px;font-weight:600;
+  padding:8px 14px;border-radius:7px;border:1px solid var(--line);color:var(--accent2);background:#fff}
+a.btn:hover{border-color:var(--accent2)}
+a.pdf{background:var(--accent);color:#fff;border-color:var(--accent)}
+a.pdf:hover{background:#611019}
+a.read{background:var(--accent2);color:#fff;border-color:var(--accent2)}
+a.read:hover{background:#092d44}
+.chip{font-size:12px;color:#6b7480;background:var(--chip);border-radius:20px;padding:5px 11px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.res{margin:22px 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.res .rh{background:#f7f6f2;padding:10px 16px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  font-weight:800;color:#55606e;border-bottom:1px solid var(--line);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.res .rb{display:flex;flex-wrap:wrap;gap:10px;padding:16px}
+.note{font-size:13.5px;color:var(--muted);margin:26px 0 0;padding-top:20px;border-top:1px solid var(--line);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.prevnext{display:flex;justify-content:space-between;gap:12px;margin:28px 0 0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px}
+.prevnext a{color:var(--accent2);text-decoration:none}
+footer{border-top:1px solid var(--line);margin-top:34px;background:#fff}
+footer .wrap{padding:22px;font-size:13px;color:var(--muted);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+footer a{color:var(--accent2)}
+@media(max-width:560px){h1{font-size:26px}.paper{padding:18px}.volume{padding:20px 18px}}
+</style></head><body><header class="masthead"><div class="wrap"><div class="crumb"><a href="index.html">Research &amp; Publications</a> &rsaquo; Power Conversion · DEC</div><div class="brand">Kronos Fusion Energy</div><h1>Direct Energy Conversion for a D–³He Magnetic-Mirror Burner: The Electron Channel is the Larger Axial Stream</h1><p class="lede">P. I. Ford, G. L. Kulcinski &middot; Kronos Fusion Energy &middot; 2026 &middot; <span class="chip">Open on Zenodo · in preparation</span></p></div></header><main class="wrap"><div class="tag">Power Conversion · DEC</div><h2 style="font-size:18px;margin:0 0 8px">Abstract</h2><p class="abs">Shows that the conventional framing of advanced-fuel direct energy conversion describes the birth spectrum, not the axial loss channel: at reactor temperatures the recoverable stream is a directed <em>electron</em> flow that no published converter recovers. Proposes a quasineutral two-species expander &mdash; the ambipolar magnetic nozzle run backward &mdash; with a pre-registered bench program to test it.</p><div class="res"><div class="rh">Connected resources</div><div class="rb"><a class="btn pdf" href="papers/Kronos_DEC_QuasineutralExpander_Editorial_2026.pdf">Download PDF (23 pp)</a><a class="btn" href="https://doi.org/10.5281/zenodo.21842864">Data &amp; code &middot; doi:zenodo.21842864</a><a class="btn" href="https://zenodo.org/communities/kronos_fusion_energy">Zenodo community</a><a class="btn" href="https://www.kronosfusionenergy.com/3D_Model">Interactive 3D model</a><a class="btn" href="https://www.kronosfusionenergy.com/Physics_Validation_Simulation">Reproducibility &amp; verification</a></div></div><p class="note">This paper is Open Access (CC BY 4.0). Every headline number regenerates from the named script and archived data in the deposit above; requirement-class assumptions and open risks are stated in the manuscript rather than absorbed into a single optimum. No financial or commercial information appears in this work.</p><div class="prevnext"><a href="magnets.html">&larr; Magnets · REBCO</a><a href="ai-quantum-control.html">Control · AI &amp; Quantum &rarr;</a></div></main><footer><div class="wrap">&copy; 2026 Kronos Fusion Energy, Inc. &middot; Los Angeles, California &middot; <a href="https://www.kronosfusionenergy.com/">kronosfusionenergy.com</a> &middot; <a href="https://zenodo.org/communities/kronos_fusion_energy">Zenodo community</a> &middot; Correspondence: p.ford@kronosfusionenergy.com</div></footer></body></html>
