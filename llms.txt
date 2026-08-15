@@ -1,0 +1,12 @@
+# Kronos Fusion Energy — Publications
+> The 2026 design series: five open-access, reproducible papers plus one complete volume.
+
+## Papers
+- [Hyperion: A Spherical-Tokamak Helium-3 and Tritium Breeder Sized to a National Requirement](https://www.kronosfusionenergy.com/publications/breeder.html): doi:10.5281/zenodo.21746157 (CC BY 4.0). A compact spherical-tokamak breeder whose size is set by an isotope-supply requirement rather than by electrical output. Across 25,200 configurations the minimum plasma current meeting a national trit
+- [A Deuterium–Helium-3 Tandem-Mirror Generator with Direct Energy Conversion: Closure and Named Extrapolations](https://www.kronosfusionenergy.com/publications/generator.html): doi:10.5281/zenodo.21746479 (CC BY 4.0). A low-neutron D–³He generator that closes its power balance on measured component efficiencies, with every extrapolation beyond demonstrated hardware named rather than hidden. Introduces a new physics
+- [An Integrated High-Field REBCO Conductor and Winding System for Compact Fusion Magnets](https://www.kronosfusionenergy.com/publications/magnets.html): doi:10.5281/zenodo.21842514 (CC BY 4.0). A strain-first REBCO conductor architecture and a bore-resolved winding method, applied across two dissimilar machines. The central result is an honest negative: the binding constraint flips between a
+- [Direct Energy Conversion for a D–³He Magnetic-Mirror Burner: The Electron Channel is the Larger Axial Stream](https://www.kronosfusionenergy.com/publications/direct-energy-conversion.html): doi:10.5281/zenodo.21842864 (CC BY 4.0). Shows that the conventional framing of advanced-fuel direct energy conversion describes the birth spectrum, not the axial loss channel: at reactor temperatures the recoverable stream is a directed ele
+- [Physics-Informed AI and Quantum Technologies for Certifiable Real-Time Control of Compact Fusion Generators](https://www.kronosfusionenergy.com/publications/ai-quantum-control.html): doi:10.5281/zenodo.21842371 (CC BY 4.0). A layered, AI-native digital-twin control architecture evaluated as a methods-and-certification study, holding three technology-readiness tiers strictly apart. Demonstrates a deterministic safety clam
+
+## Volume
+- [The Complete Volume](https://www.kronosfusionenergy.com/publications/complete.html): all five studies bound together.
