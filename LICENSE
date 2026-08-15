@@ -1,0 +1,27 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Kronos Fusion Energy / Priyanca Iyengar Ford
+
+The papers, figures, rendered pages, and accompanying materials in this
+repository are licensed under the Creative Commons Attribution 4.0
+International License. You are free to share and adapt the material for any
+purpose, even commercially, provided you give appropriate credit, provide a
+link to the license, and indicate if changes were made.
+
+  Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+  License summary:    https://creativecommons.org/licenses/by/4.0/
+
+This license mirrors the license of the same works as deposited on Zenodo
+(CC BY 4.0), so the published record is consistent across GitHub and Zenodo.
+
+Preferred citation (use the specific paper's DOI where applicable):
+  Ford, P. I. (2026). Kronos Fusion Energy — Publications.
+  Zenodo. DOIs: 10.5281/zenodo.21746157 (breeder) · 21746479 (burner) ·
+  21842514 (REBCO magnet) · 21842864 (direct energy conversion) ·
+  21842371 (AI/ML).
+
+Any build/automation code in this repository (e.g. build_publications.py) is
+additionally made available under the Apache License, Version 2.0.
+
+Trademarks (the Kronos Fusion Energy name, product names, and logos) are not
+licensed under CC BY 4.0.
