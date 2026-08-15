@@ -1,101 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Physics-Informed AI and Quantum Technologies for Certifiable Real-Time Control of Compact Fusion Generators · Kronos Fusion Energy</title><meta name="description" content="Kronos Fusion Energy 2026 — Control · AI & Quantum. Open-access paper with reproducible data and code, interactive 3D model, and live verification."><meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large"><meta property="og:type" content="article"><meta property="og:title" content="Physics-Informed AI and Quantum Technologies for Certifiable Real-Time Control of Compact Fusion Generators · Kronos Fusion Energy"><meta property="og:description" content="Kronos Fusion Energy 2026 — Control · AI & Quantum. Open-access paper with reproducible data and code, interactive 3D model, and live verification."><meta property="og:site_name" content="Kronos Fusion Energy"><link rel="canonical" href="https://www.kronosfusionenergy.com/publications/ai-quantum-control.html"><link rel="alternate" type="text/plain" href="https://www.kronosfusionenergy.com/publications/llms.txt"><meta name="citation_title" content="Physics-Informed AI and Quantum Technologies for Certifiable Real-Time Control of Compact Fusion Generators">
-<meta name="citation_author" content="P. I. Ford">
-<meta name="citation_publication_date" content="2026">
-<meta name="citation_pdf_url" content="https://www.kronosfusionenergy.com/publications/papers/Kronos_AI_Quantum_Control_Editorial_2026.pdf">
-<meta name="citation_doi" content="10.5281/zenodo.21842371">
-<meta name="citation_abstract_html_url" content="https://www.kronosfusionenergy.com/publications/ai-quantum-control.html">
-<meta name="citation_publisher" content="Kronos Fusion Energy"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Physics-Informed AI and Quantum Technologies for Certifiable Real-Time Control of Compact Fusion Generators", "name": "Physics-Informed AI and Quantum Technologies for Certifiable Real-Time Control of Compact Fusion Generators", "author": [{"@type": "Person", "name": "P. I. Ford"}], "datePublished": "2026", "publisher": {"@type": "Organization", "name": "Kronos Fusion Energy", "url": "https://www.kronosfusionenergy.com"}, "identifier": "https://doi.org/10.5281/zenodo.21842371", "sameAs": ["https://doi.org/10.5281/zenodo.21842371", "https://zenodo.org/communities/kronos_fusion_energy"], "url": "https://www.kronosfusionenergy.com/publications/ai-quantum-control.html", "image": "https://www.kronosfusionenergy.com/publications/figures/cover-ai-quantum-control.png", "isAccessibleForFree": true, "license": "https://creativecommons.org/licenses/by/4.0/", "abstract": "A layered, AI-native digital-twin control architecture evaluated as a methods-and-certification study, holding three technology-readiness tiers strictly apart. Demonstrates a deterministic safety clamp (3000/3000 injected violations caught, zero escapes), a certified control-barrier guarantee preserved through calibration, and a quantum-inspired kinetic solver \u2014 while reporting every missed target rather than reframing it."}</script><meta property="og:image" content="https://www.kronosfusionenergy.com/publications/figures/cover-ai-quantum-control.png"><style>
-:root{--ink:#14181f;--muted:#5b6675;--line:#e2e5ea;--bg:#fbfbf9;--card:#fff;
-  --accent:#7a1420;--accent2:#0b3d5c;--chip:#f1f0ec}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:16px/1.6 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;-webkit-font-smoothing:antialiased}
-.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.wrap{max-width:940px;margin:0 auto;padding:0 22px}
-header.masthead{border-bottom:1px solid var(--line);background:#fff}
-.masthead .wrap{padding:30px 22px 26px}
-.brand{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:700;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.crumb{font-size:12.5px;color:var(--muted);margin:0 0 6px;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.crumb a{color:var(--accent2);text-decoration:none}
-h1{font-size:33px;line-height:1.15;margin:12px 0 10px;letter-spacing:-.01em}
-.lede{color:var(--muted);max-width:66ch;margin:0}
-.status{margin:22px 0 0;padding:13px 16px;border:1px solid var(--line);border-left:3px solid var(--accent2);
-  background:#fff;border-radius:6px;font-size:14.5px;color:#33404e;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-main{padding:34px 0 10px}
-.intro{color:#37414d;max-width:70ch;margin:0 0 30px}
-.volume{background:linear-gradient(180deg,#fff, #fbf7f4);border:1px solid #e7ddd6;border-left:4px solid var(--accent);
-  border-radius:12px;padding:26px 26px 22px;margin:0 0 34px}
-.volume .kk{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:800;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.volume h2{font-size:24px;margin:6px 0 8px}
-.volume p{font-size:15px;color:#37414d;margin:0 0 16px;max-width:74ch}
-.paper{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 24px 18px;
-  margin:0 0 18px;box-shadow:0 1px 2px rgba(20,24,31,.03)}
-.paper h2{font-size:20px;line-height:1.3;margin:2px 0 6px;letter-spacing:-.005em}
-.paper h2 a{color:var(--ink);text-decoration:none}
-.paper h2 a:hover{color:var(--accent)}
-.authors{font-size:14px;color:var(--muted);margin:0 0 12px}
-.abs{font-size:15px;color:#2c343d;margin:0 0 16px}
-.tag{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;
-  color:var(--accent);margin:0 0 8px;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.meta{display:flex;flex-wrap:wrap;gap:9px;align-items:center;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-a.btn{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:13.5px;font-weight:600;
-  padding:8px 14px;border-radius:7px;border:1px solid var(--line);color:var(--accent2);background:#fff}
-a.btn:hover{border-color:var(--accent2)}
-a.pdf{background:var(--accent);color:#fff;border-color:var(--accent)}
-a.pdf:hover{background:#611019}
-a.read{background:var(--accent2);color:#fff;border-color:var(--accent2)}
-a.read:hover{background:#092d44}
-.chip{font-size:12px;color:#6b7480;background:var(--chip);border-radius:20px;padding:5px 11px;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.res{margin:22px 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.res .rh{background:#f7f6f2;padding:10px 16px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
-  font-weight:800;color:#55606e;border-bottom:1px solid var(--line);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.res .rb{display:flex;flex-wrap:wrap;gap:10px;padding:16px}
-.note{font-size:13.5px;color:var(--muted);margin:26px 0 0;padding-top:20px;border-top:1px solid var(--line);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.prevnext{display:flex;justify-content:space-between;gap:12px;margin:28px 0 0;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px}
-.prevnext a{color:var(--accent2);text-decoration:none}
-footer{border-top:1px solid var(--line);margin-top:34px;background:#fff}
-footer .wrap{padding:22px;font-size:13px;color:var(--muted);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-footer a{color:var(--accent2)}
-@media(max-width:560px){h1{font-size:26px}.paper{padding:18px}.volume{padding:20px 18px}}
-.sitebar{background:#232c39;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between;
-  padding:11px 22px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:13.5px}
-.sitebar a{color:#e8ebef;text-decoration:none}
-.sitebar .sb-home{font-weight:700;letter-spacing:.1em;color:#fff;font-size:12.5px}
-.sitebar .sb-links{display:flex;flex-wrap:wrap;gap:16px}
-.sitebar a:hover{color:#d3ac5f}
-@media(max-width:600px){.sitebar{gap:8px 14px;padding:10px 16px}.sitebar .sb-links{gap:13px}}
-pre.bib{background:#f6f5f1;border:1px solid var(--line);border-radius:8px;padding:14px 16px;overflow-x:auto;
-  font-size:12.5px;line-height:1.55;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-  color:#2c343d;white-space:pre;margin:0;max-width:100%}
-.cover-fig{margin:2px 0 26px;text-align:center}
-.cover-fig img{max-width:270px;width:100%;height:auto;border:1px solid #e7ddd6;border-radius:9px;
-  box-shadow:0 6px 22px rgba(20,24,31,.16)}
-.cover-fig figcaption{font-size:12.5px;color:var(--muted);margin-top:9px;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.covers{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin:0 0 34px}
-.covers img{width:118px;height:auto;border:1px solid #e7ddd6;border-radius:6px;
-  box-shadow:0 3px 12px rgba(20,24,31,.13);transition:transform .15s ease}
-.covers a:hover img{transform:translateY(-3px)}
-.clip{margin:24px 0;text-align:center}
-.clip video{width:100%;max-width:620px;height:auto;display:inline-block;background:#0e1420;border:1px solid #e2e5ea;border-top:3px solid #b8882e;border-radius:6px;box-shadow:0 6px 22px rgba(20,24,31,.14)}
-.clip figcaption{font-size:12.5px;color:var(--muted);margin-top:8px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.films{margin:36px 0 8px}
-.films h2{font-size:20px;margin:0 0 12px}
-.ytwrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;border:1px solid var(--line);background:#000}
-.ytwrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.films .more{font-size:14px;margin:10px 0 0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-</style><link rel="preconnect" href="https://pub-6f4141e515994eaf98b678a16ccbf603.r2.dev" crossorigin><style>.kfe-skip{position:absolute;left:-9999px}.kfe-skip:focus{position:fixed;left:10px;top:10px;z-index:99999;background:#D4AD5C;color:#141a22;padding:9px 15px;border-radius:4px;font-family:sans-serif;font-size:14px}</style></head><body><a href="#kfe-main" class="kfe-skip">Skip to content</a><!-- ══════════════════════════════════════════════════════════════════════════
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search · Kronos Fusion Energy</title><meta name="description" content="Search across every Kronos Fusion Energy page."><meta name="robots" content="noindex"><link rel="icon" href="https://kronosfusionenergy.com/favicon.svg"><meta name="theme-color" content="#0a0e17"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Space+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"><style>body{margin:0;background:#232C39;color:#E7EBF2;font-family:'Space Grotesk',system-ui,Arial,sans-serif}.sw{max-width:820px;margin:0 auto;padding:40px 24px 20vh}.sw h1{font-family:'Newsreader',Georgia,serif;font-size:2.2rem;margin:.2rem 0 1rem}#q{width:100%;box-sizing:border-box;background:#28323f;border:1px solid rgba(231,235,242,.18);border-radius:8px;color:#E7EBF2;font-size:1.1rem;padding:14px 16px;outline:none}#q:focus{border-color:#D4AD5C}.meta{color:#8FA0B8;font-family:'Space Mono',monospace;font-size:12px;margin:12px 2px}.res{display:block;background:#28323f;border:1px solid rgba(231,235,242,.1);border-left:3px solid #D4AD5C;border-radius:8px;padding:13px 16px;margin:9px 0;color:#E7EBF2;text-decoration:none}.res:hover{border-color:#D4AD5C}.res .rt{font-family:'Newsreader',serif;font-size:1.1rem}.res .rr{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#D4AD5C}.res .rd{color:#8FA0B8;font-size:13px;margin-top:3px}</style></head><body><!-- ══════════════════════════════════════════════════════════════════════════
      KRONOS FUSION ENERGY — GLOBAL HEADER + FOOTER (self-contained embed)
      Paste this entire block into the <body> of any static page.
      • all CSS inline in one <style> block (only external ref: Google Fonts link)
@@ -378,7 +281,7 @@ pre.bib{background:#f6f5f1;border:1px solid var(--line);border-radius:8px;paddin
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
-</header><span id="kfe-main" tabindex="-1"></span>
+</header>
 
 <!-- ── MOBILE MENU ─────────────────────────────────────────────────────── -->
 <div class="kfe-mobile" id="kfe-mobile">
@@ -425,14 +328,7 @@ pre.bib{background:#f6f5f1;border:1px solid var(--line);border-radius:8px;paddin
   <a class="kfe-cta" href="/3D_Model">3D Model</a>
 </div>
 
-</div><header class="masthead"><div class="wrap"><div class="crumb"><a href="index.html">Research &amp; Publications</a> &rsaquo; Control · AI &amp; Quantum</div><div class="brand">Kronos Fusion Energy</div><h1>Physics-Informed AI and Quantum Technologies for Certifiable Real-Time Control of Compact Fusion Generators</h1><p class="lede">P. I. Ford &middot; Kronos Fusion Energy &middot; 2026 &middot; <span class="chip">Under review · Fusion Engineering &amp; Design (Elsevier)</span></p></div></header><main class="wrap"><div class="tag">Control · AI &amp; Quantum</div><figure class="cover-fig"><a href="papers/Kronos_AI_Quantum_Control_Editorial_2026.pdf"><img src="figures/cover-ai-quantum-control.png" alt="Editorial cover — Physics-Informed AI and Quantum Technologies for Certifiable Real-Time Control of Compact Fusion Generators" loading="lazy" width="270"></a><figcaption>Editorial edition &middot; click to download the PDF</figcaption></figure><h2 style="font-size:18px;margin:0 0 8px">Abstract</h2><p class="abs">A layered, AI-native digital-twin control architecture evaluated as a methods-and-certification study, holding three technology-readiness tiers strictly apart. Demonstrates a deterministic safety clamp (3000/3000 injected violations caught, zero escapes), a certified control-barrier guarantee preserved through calibration, and a quantum-inspired kinetic solver &mdash; while reporting every missed target rather than reframing it.</p><figure class="clip"><video autoplay muted loop playsinline preload="metadata" aria-label="Kronos clip — Control · AI & Quantum"><source src="https://pub-6f4141e515994eaf98b678a16ccbf603.r2.dev/f5-quantum-verdict.mp4" type="video/mp4"></video><figcaption>Kronos clip — Control · AI & Quantum</figcaption></figure><div class="res"><div class="rh">Connected resources</div><div class="rb"><a class="btn pdf" href="papers/Kronos_AI_Quantum_Control_Editorial_2026.pdf">Download PDF (26 pp)</a><a class="btn" href="https://doi.org/10.5281/zenodo.21842371">Data &amp; code &middot; doi:zenodo.21842371</a><a class="btn" href="https://zenodo.org/communities/kronos_fusion_energy">Zenodo community</a><a class="btn" href="https://www.kronosfusionenergy.com/3D_Model">Interactive 3D model</a><a class="btn" href="https://www.kronosfusionenergy.com/Physics_Validation_Simulation">Reproducibility &amp; verification</a></div></div><div class="res"><div class="rh">Go deeper</div><div class="rb"><a class="btn" href="https://www.kronosfusionenergy.com/technical/the-ai-quantum-record.html">Technical Library deep-dive &rarr;</a><a class="btn" href="https://www.kronosfusionenergy.com/whitepapers">Related whitepapers &rarr;</a><a class="btn read" href="complete.html">The complete volume &rarr;</a></div></div><div class="res"><div class="rh">How to cite</div><div class="rb" style="display:block"><pre class="bib">@techreport{Ford2026_aiquantumcontrol,
-  author      = {P. I. Ford},
-  title       = {Physics-Informed AI and Quantum Technologies for Certifiable Real-Time Control of Compact Fusion Generators},
-  institution = {Kronos Fusion Energy},
-  year        = {2026},
-  doi         = {10.5281/zenodo.21842371},
-  url         = {https://doi.org/10.5281/zenodo.21842371}
-}</pre><p style="font-size:13px;color:#5b6675;margin:10px 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">Open Access, CC&nbsp;BY&nbsp;4.0 &mdash; cite the archival deposit by DOI.</p></div></div><p class="note">This paper is Open Access (CC BY 4.0). Every headline number regenerates from the named script and archived data in the deposit above; requirement-class assumptions and open risks are stated in the manuscript rather than absorbed into a single optimum. No financial or commercial information appears in this work.</p><div class="prevnext"><a href="direct-energy-conversion.html">&larr; Power Conversion · DEC</a><a href="complete.html">Complete volume &rarr;</a></div></main><div class="kfe-embed"><div style="text-align:center;color:#8FA0B8;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.05em;padding:14px 0 2px;opacity:.75">Content reviewed August 2026 &middot; design-and-simulation stage</div>
+</div><div class="sw"><h1>Search Kronos</h1><input id="q" type="search" placeholder="Search across every Kronos page…" autocomplete="off"><div class="meta" id="meta">loading index…</div><div id="out"></div></div><div class="kfe-embed">
 
 <!-- ── FOOTER ──────────────────────────────────────────────────────────── -->
 <footer class="kfe-footer">
@@ -589,4 +485,18 @@ f();window.addEventListener('scroll',f,{passive:true});})();
 
 </script>
 <!-- ══ END KRONOS HEADER + FOOTER EMBED ═══════════════════════════════ -->
-</body></html>
+<script>
+const REPOS=["ai", "hyperion", "aegis", "metrovolt", "defense", "ehs", "mission", "leadership", "technical", "whitepapers", "publications", "investors", "press"]; let DATA=[];
+const LBL={ai:'AI Architecture',hyperion:'Hyperion',aegis:'Aegis',metrovolt:'MetroVolt',defense:'Defense',ehs:'EHS',mission:'Mission',leadership:'Leadership',technical:'Technical Library',whitepapers:'Whitepapers',publications:'Publications',investors:'Investors',press:'Newsroom'};
+Promise.all(REPOS.map(r=>fetch('/'+r+'/search-index.json').then(x=>x.json()).then(a=>a.map(o=>({...o,r})).catch(()=>[])).catch(()=>[]))).then(all=>{DATA=all.flat();document.getElementById('meta').textContent=DATA.length+' pages indexed';run();});
+const q=document.getElementById('q'),out=document.getElementById('out'),meta=document.getElementById('meta');
+function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function run(){const v=q.value.trim().toLowerCase();if(!v){out.innerHTML='';return;}
+ const toks=v.split(/\s+/);
+ let hits=DATA.map(o=>{const hay=(o.t+' '+o.d).toLowerCase();let sc=0;for(const t of toks){if(!hay.includes(t))return null;if(o.t.toLowerCase().includes(t))sc+=3;else sc+=1;}return{o,sc};}).filter(Boolean);
+ hits.sort((a,b)=>b.sc-a.sc);
+ out.innerHTML=hits.slice(0,60).map(h=>`<a class="res" href="${h.o.u}"><div class="rr">${esc(LBL[h.o.r]||h.o.r)}</div><div class="rt">${esc(h.o.t)}</div><div class="rd">${esc(h.o.d)}</div></a>`).join('')||'<p class="meta">No matches.</p>';
+ meta.textContent=hits.length+' result'+(hits.length==1?'':'s');}
+q.addEventListener('input',run);
+const p=new URLSearchParams(location.search).get('q');if(p){q.value=p;}q.focus();
+</script></body></html>
