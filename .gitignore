@@ -1,0 +1,8 @@
+# Local build tooling (contains absolute Desktop paths / internal source refs)
+build_publications.py
+build_register.py
+extract_register.py
+deploy_register.py
+register_content.json
+_kfe_header_footer.html
+__pycache__/
