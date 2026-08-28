@@ -2,7 +2,7 @@
 
 > The Kronos 2026 design series — 44 open papers with reproducible Zenodo deposits. Design-and-simulation stage; open, no economics.
 
-- [Physics De-Risking Register (Paper 1.0)](https://www.kronosfusionenergy.com/publications/de-risking-register.html): the hub — 154 gates, 70 breakthroughs, honest closure, and the 44-paper companion DOI table.
+- [Physics De-Risking Register (Paper 1.0)](https://www.kronosfusionenergy.com/publications/de-risking-register): the hub — 154 gates, 70 breakthroughs, honest closure, and the 44-paper companion DOI table.
 - [Hyperion — The Tritium Foundry](https://www.kronosfusionenergy.com/publications/breeder.html): Kronos Fusion Energy 2026 — Paper 1.1. Hyperion — compact ST tritium/He-3 breeder. Open-access, reproducible deposit (doi:22132235).
 - [Aegis & MetroVolt — The Generator](https://www.kronosfusionenergy.com/publications/generator.html): Kronos Fusion Energy 2026 — Paper 1.2. Aegis / MetroVolt — D–3He tandem-mirror burner. Open-access, reproducible deposit (doi:22132474).
 - [High-Field REBCO Magnets & Tape — Bore-Resolved Mechanics](https://www.kronosfusionenergy.com/publications/magnets.html): Kronos Fusion Energy 2026 — Paper 1.3. High-field REBCO magnets & tape. Open-access, reproducible deposit (doi:22132475).
