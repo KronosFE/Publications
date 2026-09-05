@@ -402,7 +402,7 @@ boundary.</p></section>
 in turn requires a plug population with a loss-cone distribution. That distribution carries free energy: the
 drift-cyclotron loss-cone (DCLC) mode is the classic microstability threat to mirror plugs, and historically
 the one that limited plug performance. A credible D–\(^3\)He tandem-mirror burner must show that its plug is
-DCLC-stable at its operating point, or quantify precisely how marginal it is. This paper does the latter.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/E3_loss_cone.png" alt="Loss cone in velocity space"><figcaption><span class="n">Fig. 1 — Loss cone in velocity space.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>Plug conditions and model</h2><p>The plug operates at \(B=17\) T with an ion density \(4.16\times10^{21}\) m\(^{-3}\), perpendicular and parallel
+DCLC-stable at its operating point, or quantify precisely how marginal it is. This paper does the latter.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/E3_loss_cone.png" alt="Loss cone in velocity space"><figcaption><span class="n">Fig. 1 — Loss cone in velocity space.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>Plug conditions and model</h2><p>The plug operates at \(B=17\) T with an ion density \(4.16\times10^{21}\) m\(^{-3}\), perpendicular and parallel
 temperatures \(T_\perp=90\) keV and \(T_\parallel=45\) keV, electron temperature \(89.7\) keV, and mirror ratio
 \(4.61\) (loss-cone half-angle \(27.76^\circ\)), with a residual warm fill inside the cone. The derived cyclotron
 frequency is \(\Omega_{ci}/2\pi=129.6\) MHz and \(\omega_{pi}/\Omega_{ci}=73.7\), placing the plug
@@ -412,7 +412,7 @@ as the free parameter. Warm ions (a Maxwellian at \(9\) keV, fraction \(f_w\) of
 electrons enter analytically. We use a flute-mode (\(k_\parallel=0\)) electrostatic solver with density-gradient
 drive, cross-checked against a full electromagnetic kinetic dispersion solver ; the analytic
 Maxwellian response is reproduced to \(\leq1.2\times10^{-6}\), a Maxwellian plasma yields no growing roots, and
-prior fixed points are reproduced exactly.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/E5_sloshing_orbit.gif" alt="Sloshing-ion orbit"><figcaption><span class="n">Fig. 2 — Sloshing-ion orbit.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>The marginal-stability boundary</h2><p>The drift-cyclotron loss-cone (DCLC) mode is driven by the free energy of the mirror's loss-cone distribution and
+prior fixed points are reproduced exactly.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/E5_sloshing_orbit.gif" alt="Sloshing-ion orbit"><figcaption><span class="n">Fig. 2 — Sloshing-ion orbit.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>The marginal-stability boundary</h2><p>The drift-cyclotron loss-cone (DCLC) mode is driven by the free energy of the mirror's loss-cone distribution and
 a steep radial density gradient. Marginal stability is set by the density-gradient scale length measured in ion
 gyroradii,
 \[\frac{L_n}{\rho_i}\ge\Big(\frac{L_n}{\rho_i}\Big)_{\!c}=25.3,\qquad
@@ -427,7 +427,7 @@ scale (Table ). Warm-plasma streaming stabilizes DCLC through a monotonic, steep
 required warm fraction roughly doubles for every \(\sim9\,\rho_i\) of gradient steepening in the demanding range.
 The boundary is sharp — growth collapses to zero across a narrow warm-fraction window — which is why the
 design point's proximity to it is the decisive quantity.</p>
-<figure class="tbl"><table><tr><th>$L_n/_i$</th><th>$f_crit$ (%)</th><th>$_(f_w=0)/_ci$</th><th>$_$ at design fill</th></tr><tr><td>16</td><td>12.3</td><td>0.537</td><td>0.171 (unstable)</td></tr><tr><td>20</td><td>8.95</td><td>0.459</td><td>0.142 (unstable)</td></tr><tr><td>24</td><td>6.78</td><td>0.438</td><td>0.073 (unstable)</td></tr><tr><td>25</td><td>6.37</td><td>0.432</td><td>0.034 (residual)</td></tr><tr><td>25.3</td><td>6.25</td><td>—</td><td>$ 0$ (design fill crosses)</td></tr><tr><td>26</td><td>5.96</td><td>0.426</td><td>0.000 (stable)</td></tr><tr><td>30</td><td>4.73</td><td>0.401</td><td>0.000 (stable)</td></tr><tr><td>50</td><td>1.67</td><td>0.270</td><td>0.000 (stable)</td></tr><tr><td>$ 80$</td><td>0</td><td>0.000</td><td>0.000 (stable)</td></tr><tr><td></td></tr></table><figcaption>DCLC marginal-stability boundary: critical warm-ion fraction $f_crit <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/E4_magnetic_well.png" alt="Magnetic well ∫dl/B"><figcaption><span class="n">Fig. 3 — Magnetic well ∫dl/B.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>Does the design fill clear the boundary?</h2><p>The 6.25 % warm fill crosses \(\gamma=0\) at \(L_n/\rho_i=25.3\).
+<figure class="tbl"><table><tr><th>$L_n/_i$</th><th>$f_crit$ (%)</th><th>$_(f_w=0)/_ci$</th><th>$_$ at design fill</th></tr><tr><td>16</td><td>12.3</td><td>0.537</td><td>0.171 (unstable)</td></tr><tr><td>20</td><td>8.95</td><td>0.459</td><td>0.142 (unstable)</td></tr><tr><td>24</td><td>6.78</td><td>0.438</td><td>0.073 (unstable)</td></tr><tr><td>25</td><td>6.37</td><td>0.432</td><td>0.034 (residual)</td></tr><tr><td>25.3</td><td>6.25</td><td>—</td><td>$ 0$ (design fill crosses)</td></tr><tr><td>26</td><td>5.96</td><td>0.426</td><td>0.000 (stable)</td></tr><tr><td>30</td><td>4.73</td><td>0.401</td><td>0.000 (stable)</td></tr><tr><td>50</td><td>1.67</td><td>0.270</td><td>0.000 (stable)</td></tr><tr><td>$ 80$</td><td>0</td><td>0.000</td><td>0.000 (stable)</td></tr><tr><td></td></tr></table><figcaption>DCLC marginal-stability boundary: critical warm-ion fraction $f_crit <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/E4_magnetic_well.png" alt="Magnetic well ∫dl/B"><figcaption><span class="n">Fig. 3 — Magnetic well ∫dl/B.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>Does the design fill clear the boundary?</h2><p>The 6.25 % warm fill crosses \(\gamma=0\) at \(L_n/\rho_i=25.3\).
 Therefore for \(L_n/\rho_i\gtrsim25.3\) the fill fully stabilizes DCLC, while at the more
 demanding \(L_n/\rho_i\approx25\) it leaves a residual growth rate of \(\approx0.034\,\Omega_{ci}\) — the mode is
 not quite quenched, and the design sits on the knee. Separately, a weak Alfv\'en-ion-cyclotron-type residual of
@@ -462,10 +462,10 @@ Provisional patent applications relating to aspects of this work have been filed
   Owner: Kronos Fusion Energy · kronosfusionenergy.com
   Asset: embed_mirror.kmx.html · Created: 2026-08-29
   Provenance: Ratified freeze 2026-08-27 · De-Risking Register v1.0 (DOI 10.5281/zenodo.22133057)
-  Proprietary asset of Kronos Fusion Energy — canon-locked, conceptual design study.
+  Proprietary asset of Kronos Fusion Energy — engineering program.
 ========================================================== -->
 <!-- KRONOS .kmx embed — interactive tandem-mirror confinement (self-contained, scoped, silent) -->
-<div data-owner="Kronos Fusion Energy" data-copyright="© 2026 Kronos Fusion Energy" data-canon="ratified freeze 2026-08-27" data-classification="public-web" class="kmx kmx-mir">
+<div data-owner="Kronos Fusion Energy" data-copyright="© 2026 Kronos Fusion Energy" data-canon="" data-classification="public-web" class="kmx kmx-mir">
   <div class="kmx-head">
     <span class="kmx-kicker">AEGIS / METROVOLT · INTERACTIVE</span>
     <h3>Magnetic-mirror confinement</h3>
@@ -483,7 +483,7 @@ Provisional patent applications relating to aspects of this work have been filed
       <div class="kmx-facts">central cell · high-field end plugs · θ = arcsin(1/√R<sub>m</sub>)</div>
     </div>
   </div>
-  <div class="kmx-foot">© 2026 Kronos Fusion Energy · illustrative model · loss-cone from mirror ratio · conceptual design study · ratified freeze 2026-08-27</div>
+  <div class="kmx-foot">© 2026 Kronos Fusion Energy · illustrative model · loss-cone from mirror ratio · engineering program</div>
 </div>
 <style>
 .kmx-mir{--bg:#0a0d12;--panel:#0c1016;--gold:#D4AD5C;--blue:#5ea0c0;--pink:#e94f9c;--txt:#e2e8ef;--mut:#8792a0;
@@ -561,7 +561,7 @@ first-principles codes, not demonstrated in hardware. Every figure is computed; 
 <div class="foot">
   <p><b>The DCLC Stabilization Knee: Warm-Plasma Streaming and the Marginal Loss-Cone Microstability of a Deuterium-Helium-3 Tandem-Mirror Plug</b> — Ford, P I · Kulcinski, G L. Part of the 44-paper Kronos 2026 series
   (De-Risking Register v1.0, DOI 10.5281/zenodo.22133057). Paper DOI: <a href="https://doi.org/10.5281/zenodo.22132170">10.5281/zenodo.22132170</a>.</p>
-  <p>© 2026 Kronos Fusion Energy · all figures computed · ratified freeze 2026-08-27.</p>
+  <p>© 2026 Kronos Fusion Energy · all figures computed.</p>
 </div></div>
 <section class="cite-repro" aria-label="Cite and reproduce">
   <style>

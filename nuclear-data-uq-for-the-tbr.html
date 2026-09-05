@@ -397,7 +397,7 @@ tolerance on the breeding claim; every number is a frozen anchor in the de-riski
 BR-L2-A28).</p></section>
 <section><h2>Introduction</h2><p>The breeding ratio is the number the whole breeder case rests on, and its credibility depends on the cross-section
 evaluations behind the light-element \((n,t)\), \((n,n't)\), and \((n,2n)\) reactions. A responsible design states not
-just the TBR but its nuclear-data tolerance and identifies which channels drive it.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/C3_neutron_spectrum.png" alt="14.1 MeV neutron spectrum"><figcaption><span class="n">Fig. 1 — 14.1 MeV neutron spectrum.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>Method</h2><p>The uncertainty in a computed integral response \(R\) (here the breeding ratio) due to nuclear-data uncertainty is
+just the TBR but its nuclear-data tolerance and identifies which channels drive it.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/C3_neutron_spectrum.png" alt="14.1 MeV neutron spectrum"><figcaption><span class="n">Fig. 1 — 14.1 MeV neutron spectrum.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>Method</h2><p>The uncertainty in a computed integral response \(R\) (here the breeding ratio) due to nuclear-data uncertainty is
 propagated by the sandwich rule,
 \[\sigma_R^2=\mathbf{S}_R^{\!\top}\,\mathbf{C}\,\mathbf{S}_R,\qquad
 S_{R,i}=\frac{\partial\ln R}{\partial\ln\Sigma_i},\]
@@ -409,11 +409,11 @@ path is not the source of spread — the evaluated data is, which is what fixes 
 <p>We compare two nuclear-data provenances for the same reactions: the evaluated library ENDF/B-VIII.0 and
 default-model data generated with TALYS, each processed through NJOY21 into identical multigroup form and
 transported through the same three-dimensional geometry. The spread between the two, channel by channel, is a
-proxy for the model-form uncertainty that a covariance analysis must bound.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/C2_tbr_map.png" alt="Tritium-breeding-ratio map"><figcaption><span class="n">Fig. 2 — Tritium-breeding-ratio map.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>The light channels dominate the error bar</h2><p>Figure shows the channel-resolved spread (gate BR-L2-A28). The breeding-carrying light channels
+proxy for the model-form uncertainty that a covariance analysis must bound.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/C2_tbr_map.png" alt="Tritium-breeding-ratio map"><figcaption><span class="n">Fig. 2 — Tritium-breeding-ratio map.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>The light channels dominate the error bar</h2><p>Figure shows the channel-resolved spread (gate BR-L2-A28). The breeding-carrying light channels
 diverge by \(55\)–\(66\,\%\) between evaluated and model data at 14 MeV, an order of magnitude larger than the
 \(\approx15\,\%\) spread of the heavy structural channels. Because the TBR is a near-linear functional of the light
 \((n,t)\) and \((n,2n)\) rates, the light-channel spread is what propagates into the breeding tolerance; the
-structural data, though voluminous, contributes little.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/D3_tbr_tornado.png" alt="TBR-sensitivity tornado"><figcaption><span class="n">Fig. 3 — TBR-sensitivity tornado.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>The requirement</h2><p>The consequence is a data requirement, not a caveat: the light-element breeding channels must be taken from
+structural data, though voluminous, contributes little.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/D3_tbr_tornado.png" alt="TBR-sensitivity tornado"><figcaption><span class="n">Fig. 3 — TBR-sensitivity tornado.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>The requirement</h2><p>The consequence is a data requirement, not a caveat: the light-element breeding channels must be taken from
 evaluated covariances and, where the field's evaluations disagree, targeted by integral or differential
 measurement. Reporting a TBR without propagating these covariances understates the tolerance on the single most
 load-bearing number in the breeder design.</p></section><section><h2>Limitations</h2><p>The TALYS-vs-ENDF spread is a model-form proxy, not a full covariance propagation; a complete uncertainty budget
@@ -432,9 +432,9 @@ Provisional patent applications relating to aspects of this work have been filed
   Owner: Kronos Fusion Energy · kronosfusionenergy.com
   Asset: embed_tbrtune.kmx.html · Created: 2026-08-29
   Provenance: Ratified freeze 2026-08-27 · De-Risking Register v1.0
-  Proprietary asset of Kronos Fusion Energy — canon-locked, conceptual design study.
+  Proprietary asset of Kronos Fusion Energy — engineering program.
 ========================================================== -->
-<div data-owner="Kronos Fusion Energy" data-copyright="© 2026 Kronos Fusion Energy" data-canon="ratified freeze 2026-08-27" data-classification="public-web" class="kmx kmx-tb">
+<div data-owner="Kronos Fusion Energy" data-copyright="© 2026 Kronos Fusion Energy" data-canon="" data-classification="public-web" class="kmx kmx-tb">
   <div class="kmx-head">
     <span class="kmx-kicker">HYPERION · BREEDING</span>
     <h3>Tuning the breeding ratio</h3>
@@ -450,7 +450,7 @@ Provisional patent applications relating to aspects of this work have been filed
       <div class="kmx-facts">self-sufficiency needs TBR &gt; 1</div>
     </div>
   </div>
-  <div class="kmx-foot">© 2026 Kronos Fusion Energy · illustrative breeding model · design point TBR 1.42 · conceptual design study · ratified freeze 2026-08-27</div>
+  <div class="kmx-foot">© 2026 Kronos Fusion Energy · illustrative breeding model · design point TBR 1.42 · engineering program</div>
 </div>
 <style>
 .kmx-tb{--bg:#0a0d12;--panel:#0c1016;--gold:#D4AD5C;--blue:#5ea0c0;--pink:#e94f9c;--green:#7bc47f;--txt:#e2e8ef;--mut:#8792a0;
@@ -515,7 +515,7 @@ first-principles codes, not demonstrated in hardware. Every figure is computed; 
 <div class="foot">
   <p><b>The TBR Error Bar - Which Cross-Sections Actually Matter</b> — Ford, P. I.. Part of the 44-paper Kronos 2026 series
   (De-Risking Register v1.0, DOI 10.5281/zenodo.22133057). Paper DOI: <a href="https://doi.org/10.5281/zenodo.22132200">10.5281/zenodo.22132200</a>.</p>
-  <p>© 2026 Kronos Fusion Energy · all figures computed · ratified freeze 2026-08-27.</p>
+  <p>© 2026 Kronos Fusion Energy · all figures computed.</p>
 </div></div>
 <section class="cite-repro" aria-label="Cite and reproduce">
   <style>

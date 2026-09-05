@@ -398,7 +398,7 @@ frozen anchor in the de-risking registerR0 (invention #70). <em>This is a shorte
 <section><h2>Introduction</h2><p>Automated control on a regulated machine raises a governance question that is usually answered by fiat: how much
 authority should the automation have? We answer it by tying authority to evidence. A subsystem whose models are
 thoroughly validated has earned more autonomy than one whose models are still reduced-order, and the control
-system should encode that difference explicitly.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/I5_state_clock.gif" alt="Start-to-burn state clock"><figcaption><span class="n">Fig. 1 — Start-to-burn state clock.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>The principle</h2><p>Maturity-gated actuation restricts the controller's authority to the region where its model is validated. Let
+system should encode that difference explicitly.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/I5_state_clock.gif" alt="Start-to-burn state clock"><figcaption><span class="n">Fig. 1 — Start-to-burn state clock.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>The principle</h2><p>Maturity-gated actuation restricts the controller's authority to the region where its model is validated. Let
 \(M(x)\in[0,1]\) be a maturity index — the validated-envelope membership of the current state — then the applied
 command blends the nominal and a conservative fallback and is hard-clamped by the safety filter,
 \[u_{\mathrm{app}}=\Pi_{\mathcal U}\!\Big(M(x)\,u_{\mathrm{nom}}+\big(1-M(x)\big)\,u_{\mathrm{safe}}\Big),\]
@@ -412,7 +412,7 @@ authority (magnitude, rate, and irreversibility) a controller may exercise on a 
 of that subsystem's maturity. High-maturity subsystems admit wide, fast authority; low-maturity ones are clamped
 to a narrow, reversible band, with the balance deferred to a human operator or a physics-bounded safe controller
 (companion control-barrier paper).
-<figure class="tbl"><table><tr><th>maturity level</th><th>permitted authority</th><th>residual control</th></tr><tr><td>machine-validated</td><td>wide, fast, includes irreversible actions</td><td>controller-led</td></tr><tr><td>converged</td><td>moderate, rate-limited</td><td>controller with human confirm</td></tr><tr><td>representative / reduced-order</td><td>narrow, reversible only</td><td>human or physics-bounded</td></tr><tr><td></td></tr></table><figcaption>Maturity gates actuation authority (invention #70). <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure></p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/I1_current_ramp.gif" alt="Plasma-current ramp Iₚ(t)"><figcaption><span class="n">Fig. 2 — Plasma-current ramp Iₚ(t).</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>Why it matters for licensing</h2><p>The principle gives a regulator an auditable governance rule rather than a promise. Authority is not asserted; it
+<figure class="tbl"><table><tr><th>maturity level</th><th>permitted authority</th><th>residual control</th></tr><tr><td>machine-validated</td><td>wide, fast, includes irreversible actions</td><td>controller-led</td></tr><tr><td>converged</td><td>moderate, rate-limited</td><td>controller with human confirm</td></tr><tr><td>representative / reduced-order</td><td>narrow, reversible only</td><td>human or physics-bounded</td></tr><tr><td></td></tr></table><figcaption>Maturity gates actuation authority (invention #70). <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure></p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/I1_current_ramp.gif" alt="Plasma-current ramp Iₚ(t)"><figcaption><span class="n">Fig. 2 — Plasma-current ramp Iₚ(t).</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>Why it matters for licensing</h2><p>The principle gives a regulator an auditable governance rule rather than a promise. Authority is not asserted; it
 is derived from the documented maturity of the underlying models, and it expands only as that maturity is
 demonstrated. This makes the automation's scope a transparent function of evidence — a property a
 byproduct-material or reactor licensing review can inspect (companion licensing paper).</p></section><section><h2>Limitations</h2><p>The principle is a governance architecture, not a controller: the mapping from maturity level to a concrete
@@ -431,17 +431,17 @@ Provisional patent applications relating to aspects of this work have been filed
   Owner: Kronos Fusion Energy · kronosfusionenergy.com
   Asset: embed_opclock.kmx.html · Created: 2026-08-29
   Provenance: Ratified freeze 2026-08-27 · De-Risking Register v1.0 (DOI 10.5281/zenodo.22133057)
-  Proprietary asset of Kronos Fusion Energy — canon-locked, conceptual design study.
+  Proprietary asset of Kronos Fusion Energy — engineering program.
 ========================================================== -->
 <!-- KRONOS .kmx embed — animated start-to-burn operation clock (self-contained, scoped, silent) -->
-<div data-owner="Kronos Fusion Energy" data-copyright="© 2026 Kronos Fusion Energy" data-canon="ratified freeze 2026-08-27" data-classification="public-web" class="kmx kmx-op">
+<div data-owner="Kronos Fusion Energy" data-copyright="© 2026 Kronos Fusion Energy" data-canon="" data-classification="public-web" class="kmx kmx-op">
   <div class="kmx-head">
     <span class="kmx-kicker">HYPERION · OPERATION SEQUENCE</span>
     <h3>Cold start to steady burn</h3>
     <p class="kmx-sub">A full shot, start to finish: energize the HTS magnets, break down the plasma, ramp the current, ignite, and hold. Watch the machine come up to power.</p>
   </div>
   <canvas class="kmx-canvas" width="920" height="330" aria-label="animated startup-to-burn sequence"></canvas>
-  <div class="kmx-foot">© 2026 Kronos Fusion Energy · illustrative operation sequence · representative timescales · conceptual design study · ratified freeze 2026-08-27</div>
+  <div class="kmx-foot">© 2026 Kronos Fusion Energy · illustrative operation sequence · representative timescales · engineering program</div>
 </div>
 <style>
 .kmx-op{--bg:#0a0d12;--panel:#0c1016;--gold:#D4AD5C;--blue:#5ea0c0;--pink:#e94f9c;--green:#7bc47f;--txt:#e2e8ef;--mut:#8792a0;
@@ -504,7 +504,7 @@ first-principles codes, not demonstrated in hardware. Every figure is computed; 
 <div class="foot">
   <p><b>Maturity-Gated Actuation Authority - Trust Earned by Evidence</b> — Ford, P. I.. Part of the 44-paper Kronos 2026 series
   (De-Risking Register v1.0, DOI 10.5281/zenodo.22133057). Paper DOI: <a href="https://doi.org/10.5281/zenodo.22132227">10.5281/zenodo.22132227</a>.</p>
-  <p>© 2026 Kronos Fusion Energy · all figures computed · ratified freeze 2026-08-27.</p>
+  <p>© 2026 Kronos Fusion Energy · all figures computed.</p>
 </div></div>
 <section class="cite-repro" aria-label="Cite and reproduce">
   <style>

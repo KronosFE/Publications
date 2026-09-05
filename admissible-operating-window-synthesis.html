@@ -397,7 +397,7 @@ constraint-synthesis contribution, distinct from the structural, fuel-cycle, and
 number is a frozen anchor in the de-risking registerR0 (gates BR-L1-A2, KX-L1-A21).</p></section>
 <section><h2>Introduction</h2><p>Where a breeder operates is decided by the constraints that box it in, not by a single figure of merit. Making
 that box explicit — its floors, its ceilings, and which of them actually bind — is a design result that tells
-the operator how much room exists and what it costs to move. We synthesize it from the frozen physics.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/J5_regime_scatter.png" alt="Regime scatter"><figcaption><span class="n">Fig. 1 — Regime scatter.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>The source-strength / centrepost-life invariance</h2><p>The synthesis rests on an invariance between neutron source strength and centrepost life: raising the plasma
+the operator how much room exists and what it costs to move. We synthesize it from the frozen physics.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/J5_regime_scatter.png" alt="Regime scatter"><figcaption><span class="n">Fig. 1 — Regime scatter.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>The source-strength / centrepost-life invariance</h2><p>The synthesis rests on an invariance between neutron source strength and centrepost life: raising the plasma
 current increases the fusion (and thus neutron) source \(S_n\propto I_p^{\,\beta}\) but shortens the centrepost life
 \(\tau_{\mathrm{life}}\propto\Phi_{\mathrm{allow}}/S_n\), so their product is bounded,
 \[S_n\,\tau_{\mathrm{life}}\ \lesssim\ \Phi_{\mathrm{allow}},\]
@@ -411,12 +411,12 @@ the neutron source strength and the first-wall loading trade one-for-one against
 corner of the operating plane where more source strength comes free of centrepost cost — the ratio is fixed.
 This removes a tempting illusion: one cannot tune the operating point to gain neutron output without paying the
 proportional centrepost-life penalty, so the operating-point choice is a direct trade, not an optimization with a
-free lunch.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/D10_selfsuff_map.png" alt="Self-sufficiency margin map"><figcaption><span class="n">Fig. 2 — Self-sufficiency margin map.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>The admissible-current window</h2><p>The second finding is that the admissible plasma current is a coupled floor/ceiling problem (gate KX-L1-A21).
+free lunch.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/D10_selfsuff_map.png" alt="Self-sufficiency margin map"><figcaption><span class="n">Fig. 2 — Self-sufficiency margin map.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>The admissible-current window</h2><p>The second finding is that the admissible plasma current is a coupled floor/ceiling problem (gate KX-L1-A21).
 Figure shows the box: the lower bound on \(I_p\) is set by the edge safety factor \(q_{95}\) and
 magnetohydrodynamic edge stability, and the upper bound by the centrepost neutron fluence (the ceiling from the
 invariance above). The design current \(I_p=9.66\MA\) sits inside this window. The tritium-startup
 requirement, often assumed to be the binding floor, is in fact non-binding here — it sits inside the window
-with \(\approx1.7\times\) margin — so the true floor is the magnetohydrodynamic edge, not fuel startup.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/I8_duty_cycle.png" alt="Duty-cycle map"><figcaption><span class="n">Fig. 3 — Duty-cycle map.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>Which constraints bind</h2><p>The thermal-confinement basis of this operating point is independently confirmed: nonlinear CGYRO shows the
+with \(\approx1.7\times\) margin — so the true floor is the magnetohydrodynamic edge, not fuel startup.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/I8_duty_cycle.png" alt="Duty-cycle map"><figcaption><span class="n">Fig. 3 — Duty-cycle map.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>Which constraints bind</h2><p>The thermal-confinement basis of this operating point is independently confirmed: nonlinear CGYRO shows the
 negative-triangularity turbulence suppression holding across ion (40–45 %, converged
 at real electron mass \(\mu=3672\)) and electron (79–80 %) scales,
 robust to collisionality and across the spectrum, in four mutually consistent gyrokinetic calculations
@@ -424,7 +424,7 @@ robust to collisionality and across the spectrum, in four mutually consistent gy
 <p>The synthesis identifies the binding constraints, which is the actionable output. The centrepost-fluence ceiling
 and the magnetohydrodynamic-edge floor bind; the tritium-startup floor does not. A designer moving the operating
 point therefore trades centrepost life against edge stability, with fuel startup a non-issue in this window —
-a clearer picture than treating all constraints as co-equal.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/J4_field_vs_perf.png" alt="Field vs performance"><figcaption><span class="n">Fig. 4 — Field vs performance.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed · ratified freeze 2026-08-27</span></figcaption></figure><section><h2>Limitations</h2><p>The invariance is established on the frozen density–temperature scan and assumes the frozen geometry; the
+a clearer picture than treating all constraints as co-equal.</p></section><figure><img src="https://kronosfe.github.io/Physics-Validation-Live_Simulation/figures/J4_field_vs_perf.png" alt="Field vs performance"><figcaption><span class="n">Fig. 4 — Field vs performance.</span> <span class="prov">© 2026 Kronos Fusion Energy · computed</span></figcaption></figure><section><h2>Limitations</h2><p>The invariance is established on the frozen density–temperature scan and assumes the frozen geometry; the
 current-window bounds use representative \(q_{95}\)/MHD and fluence limits. The \(1.7\times\) startup margin is at
 the design point and would shrink at a different blanket recipe. This is a constraint-synthesis result; it maps
 the box, it does not re-optimize the design.</p></section><section><h2>Conclusion</h2><p>The compact breeder's operating window is boxed by a strict source-strength/centrepost-life invariance (no free
@@ -440,17 +440,17 @@ Provisional patent applications relating to aspects of this work have been filed
   Owner: Kronos Fusion Energy · kronosfusionenergy.com
   Asset: embed_products.kmx.html · Created: 2026-08-29
   Provenance: Ratified freeze 2026-08-27 · De-Risking Register v1.0 (DOI 10.5281/zenodo.22133057)
-  Proprietary asset of Kronos Fusion Energy — canon-locked, conceptual design study.
+  Proprietary asset of Kronos Fusion Energy — engineering program.
 ========================================================== -->
 <!-- KRONOS .kmx embed — neutron-to-products (materials wedge, self-contained, scoped, silent) -->
-<div data-owner="Kronos Fusion Energy" data-copyright="© 2026 Kronos Fusion Energy" data-canon="ratified freeze 2026-08-27" data-classification="public-web" class="kmx kmx-pr">
+<div data-owner="Kronos Fusion Energy" data-copyright="© 2026 Kronos Fusion Energy" data-canon="" data-classification="public-web" class="kmx kmx-pr">
   <div class="kmx-head">
     <span class="kmx-kicker">HYPERION · THE PRODUCT</span>
     <h3>Sell the materials, not the electricity</h3>
     <p class="kmx-sub">Every fusion neutron is a manufacturing tool. In the blanket it makes things the world is short of — starting with <em>tritium</em>, the only bankable base, plus a platform for helium-3 and medical isotopes.</p>
   </div>
   <canvas class="kmx-canvas" width="920" height="360" aria-label="neutron to materials products flow"></canvas>
-  <div class="kmx-foot">© 2026 Kronos Fusion Energy · illustrative product flow · outputs only, no economics · conceptual design study · ratified freeze 2026-08-27</div>
+  <div class="kmx-foot">© 2026 Kronos Fusion Energy · illustrative product flow · outputs only, no economics · engineering program</div>
 </div>
 <style>
 .kmx-pr{--bg:#0a0d12;--panel:#0c1016;--gold:#D4AD5C;--blue:#5ea0c0;--pink:#e94f9c;--green:#7bc47f;--txt:#e2e8ef;--mut:#8792a0;
@@ -525,7 +525,7 @@ first-principles codes, not demonstrated in hardware. Every figure is computed; 
 <div class="foot">
   <p><b>The Admissible Operating Window - Which Constraints Actually Bind</b> — Ford, P. I. · Kulcinski, G. L.. Part of the 44-paper Kronos 2026 series
   (De-Risking Register v1.0, DOI 10.5281/zenodo.22133057). Paper DOI: <a href="https://doi.org/10.5281/zenodo.22132231">10.5281/zenodo.22132231</a>.</p>
-  <p>© 2026 Kronos Fusion Energy · all figures computed · ratified freeze 2026-08-27.</p>
+  <p>© 2026 Kronos Fusion Energy · all figures computed.</p>
 </div></div>
 <section class="cite-repro" aria-label="Cite and reproduce">
   <style>
