@@ -1,39 +1,109 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bayesian Optimal Experimental Design and Multi-Fidelity Data Fusion: Prioritizing the Next Experiment across Reduced-Order, GPU-HPC and Hardware Data — Kronos 2.89</title>
+<meta name="robots" content="noindex, nofollow">
+<title>Bayesian Optimal Experimental Design and Multi-Fidelity Data… · Kronos Fusion Energy</title>
+<meta name="description" content="Bayesian Optimal Experimental Design and Multi-Fidelity Data Fusion: Prioritizing the Next Experiment across Reduced-Order, GPU-HPC and Hardware Data">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
 <style>
-:root{--ink:#141414;--dim:#5b5f63;--line:#e4e2dd;--paper:#faf8f4;--crimson:#b3122b;--gold:#9a7b32;--dark:#0f1113;--dinkc:#e8e6e2}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
-.wrap{max-width:760px;margin:0 auto;padding:0 22px}a{color:var(--crimson)}
-.hero{background:var(--dark);color:var(--dinkc);border-bottom:3px solid var(--crimson)}
-.hero .inner{max-width:760px;margin:0 auto;padding:70px 22px 52px}
-.kick{font:600 12px/1 -apple-system,Segoe UI,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#e0566f}
-.hero h1{font-size:33px;line-height:1.13;margin:14px 0 10px}
-.auth{font-size:16px;color:#c9cdd1;margin:0 0 18px}
-.stat{display:inline-block;border:1px solid #37414a;border-radius:5px;padding:7px 13px;margin:4px 8px 4px 0;font:600 13px/1 -apple-system,Segoe UI,sans-serif;color:#e8e6e2;background:rgba(15,17,19,.5)}
-.stat b{color:#ff7ea6}
-section{padding:34px 0}
-.soon{background:#fbf3ec;border-left:3px solid var(--gold);padding:16px 20px;border-radius:5px;color:#5a4a33;font-size:16px}
-.foot{padding:24px 0 60px;color:var(--dim);font:13px/1.6 -apple-system,Segoe UI,sans-serif;border-top:1px solid var(--line)}
-@media (prefers-color-scheme:dark){:root{--ink:#e8e6e2;--dim:#9aa0a6;--line:#2a2d31;--paper:#0f1113}.soon{background:#1f1a12;color:#d8c39a}}
+  :root{
+    --bg:#0b0f14; --panel:#111823; --ink:#eef3f8; --dim:#9fb0c3;
+    --line:#22303f; --gold:#c9a24b; --accent:#4a9edb; --accent-ink:#0b0f14;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);
+    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+  header.nav{border-bottom:1px solid var(--line);background:rgba(11,15,20,.85);
+    position:sticky;top:0;backdrop-filter:blur(8px);z-index:10}
+  header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+  .brand{font-family:Fraunces,serif;font-weight:600;letter-spacing:.2px;font-size:16px}
+  .brand span{color:var(--gold)}
+  .navlinks a{color:var(--dim);text-decoration:none;font-size:13.5px;margin-left:20px}
+  .navlinks a:hover{color:var(--ink)}
+  .hero{padding:46px 0 30px;border-bottom:1px solid var(--line)}
+  .kick{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(26px,3.4vw,40px);
+    line-height:1.12;margin:14px 0 12px;text-wrap:balance;max-width:26ch}
+  .auth{color:var(--dim);font-size:15px;margin:0 0 4px}
+  .stat{color:var(--dim);font-size:13.5px;margin:10px 0 0;font-variant-numeric:tabular-nums}
+  .stat b{color:var(--ink);font-weight:600}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:9px;
+    text-decoration:none;font-weight:600;font-size:14px;border:1px solid var(--line)}
+  .btn.primary{background:var(--gold);color:var(--accent-ink);border-color:var(--gold)}
+  .btn.ghost{color:var(--ink)}
+  .btn:hover{transform:translateY(-1px)}
+  /* audio slot — hidden until an mp3/m4a is wired */
+  .audio{margin-top:20px;padding:14px 16px;border:1px solid var(--line);border-radius:11px;
+    background:var(--panel);display:none;align-items:center;gap:14px}
+  .audio.on{display:flex}
+  .audio .lbl{font-size:13px;color:var(--dim)}
+  .audio audio{flex:1;min-width:200px}
+  .pdfwrap{margin:26px 0 40px;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+    background:#1a2430;box-shadow:0 20px 60px -30px rgba(0,0,0,.8)}
+  .pdfwrap embed,.pdfwrap iframe{width:100%;height:82vh;min-height:560px;border:0;display:block;background:#2a3644}
+  footer{border-top:1px solid var(--line);color:var(--dim);font-size:12.5px;padding:26px 0 46px}
+  footer a{color:var(--dim)}
+  @media (max-width:640px){ .pdfwrap embed,.pdfwrap iframe{height:70vh} }
 </style>
-<link rel="canonical" href="https://www.kronosfusionenergy.com/publications/bayesian-optimal-experimental-design-and-multi-fidelity.html">
-<link rel="icon" href="https://kronosfusionenergy.com/favicon.svg"><link rel="apple-touch-icon" href="https://kronosfusionenergy.com/favicon.svg">
-<meta property="og:image" content="https://www.kronosfusionenergy.com/__l5e/assets-v1/9153ca3a-2184-47d8-a388-f5f14558ab5b/kronos_preview_1200x630.png"><meta property="og:image:type" content="image/png"><meta property="og:url" content="https://www.kronosfusionenergy.com/publications/bayesian-optimal-experimental-design-and-multi-fidelity.html">
-<meta name="description" content="Kronos Fusion Energy — Paper 2.89: Bayesian Optimal Experimental Design and Multi-Fidelity Data Fusion: Prioritizing the Next Experiment across Reduced-Order, GPU-HPC and Hardware Data. Publishing shortly; the permanent DOI record activates on publication.">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KCBWEPVPH"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9KCBWEPVPH');</script>
-<link rel="stylesheet" href="kfe-shell.css"><script src="kfe-shell.js" defer></script>
-</head><body>
-<div class="hero"><div class="inner">
-<div class="kick">Kronos Fusion Energy · Paper 2.89 · Publishing shortly</div>
-<h1>Bayesian Optimal Experimental Design and Multi-Fidelity Data Fusion: Prioritizing the Next Experiment across Reduced-Order, GPU-HPC and Hardware Data</h1>
-<p class="auth">P. I. Ford</p>
-<span class="stat">DOI <b>10.5281/zenodo.22645895</b> · live on publication</span>
-<span class="stat">Phase 2 · De-Risking</span>
-</div></div>
-<div class="wrap"><section>
-<div class="soon"><b>This paper is being finalized.</b> The full text and its permanent record will appear here shortly. The DOI above resolves once the Zenodo deposit is published.</div>
-<p style="margin-top:22px">Part of the Kronos 2026 design series — see the <a href="/publications">full paper index</a> and the <a href="/register">de-risking register</a>, the evidence hub every paper references.</p>
-</section>
-<div class="foot">© Kronos Fusion Energy · a family-owned American company building toward fusion power. Paper text CC BY 4.0.</div>
-</div></body></html>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <div class="brand">KRONOS <span>Fusion Energy</span></div>
+  <nav class="navlinks">
+    <a href="/publications">Publications</a>
+    <a href="/publications/de-risking-register">Register</a>
+    <a href="https://www.kronosfusionenergy.com">Home</a>
+  </nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="kick">Paper 2.89 · Phase 2 · De-Risking & Systems</div>
+  <h1>Bayesian Optimal Experimental Design and Multi-Fidelity Data Fusion: Prioritizing the Next Experiment across Reduced-Order, GPU-HPC and Hardware Data</h1>
+  <p class="auth">P. I. Ford · Kronos Fusion Energy <span style="color:var(--line)">|</span> full author list on page 1</p>
+  <p class="stat">DOI <b>10.5281/zenodo.22645895</b> · Editorial edition · 2026 Kronos publication series</p>
+  <div class="cta">
+    <a class="btn primary" href="papers/bayesian-optimal-experimental-design-and-multi-fidelity.pdf" download>Download PDF</a>
+    <a class="btn ghost" href="papers/bayesian-optimal-experimental-design-and-multi-fidelity.pdf" target="_blank" rel="noopener">Open in new tab ↗</a>
+  </div>
+  <div class="audio" id="audioslot">
+    <span class="lbl">Listen ·</span>
+    <audio controls preload="none"><source id="audiosrc" src="" type="audio/mp4"></audio>
+  </div>
+</div></section>
+
+<main class="wrap">
+  <div class="pdfwrap">
+    <embed src="papers/bayesian-optimal-experimental-design-and-multi-fidelity.pdf#view=FitH" type="application/pdf">
+    <iframe src="papers/bayesian-optimal-experimental-design-and-multi-fidelity.pdf" title="Bayesian Optimal Experimental Design and Multi-Fidelity Data Fusion: Prioritizing the Next Experiment across Reduced-Order, GPU-HPC and Hardware Data"></iframe>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  © 2026 Kronos Fusion Energy · a family-owned American company.
+  &nbsp;·&nbsp; <a href="/publications">All publications</a>
+</div></footer>
+
+<script>
+// Reveal the audio player only if a narration file exists for this paper.
+(function(){
+  var AUDIO_BASE="https://cah4hr4oxtztqiui.public.blob.vercel-storage.com/paper-audio";
+  var key="bayesian-optimal-experimental-design-and-multi-fidelity";
+  var url=AUDIO_BASE+"/"+key+".m4a";
+  fetch(url,{method:"HEAD"}).then(function(r){
+    if(r.ok){document.getElementById("audiosrc").src=url;
+      document.querySelector("#audioslot audio").load();
+      document.getElementById("audioslot").classList.add("on");}
+  }).catch(function(){});
+})();
+</script>
+</body>
+</html>
